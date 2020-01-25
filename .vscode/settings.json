@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.tex": "bibtex",
+        "vector": "cpp",
+        "cmath": "cpp",
+        "random": "cpp",
+        "string": "cpp",
+        "complex": "cpp"
+    }
+}

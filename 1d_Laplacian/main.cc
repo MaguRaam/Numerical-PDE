@@ -55,8 +55,8 @@ double L2error(const vector<double>& x,double h,int n){
     return pow(error,0.5);
 }
 
-double write_data(const vector<double>& u,double h){
-    ofstream output("plot/result.dat");
+double write_data(const vector<double>& u,double h,string filename){
+    ofstream output(filename);
     output << setprecision(10) << setiosflags(ios::scientific);
     for (int i=0;i<u.size();i++)
         output<<u[i]<<"\n";
@@ -74,10 +74,12 @@ void Laplace(int n){
     //inititalize b vector
     vector<double> b(n+1,0.0);
     inititalize_b(b,n);
+    write_data(x,b,"plot/b.dat");
     
     //fourier transform:
     vector<double> b_tilde(n+1,0.0);
     fourier_transform(b,b_tilde,n);
+    write_data(x,h,"plot/u.dat");
 
     //solve for x_tilde in fourier domain:
     vector<double> x_tilde(n+1,0.0);
@@ -91,17 +93,14 @@ void Laplace(int n){
     cout<<n<<"\t\t\t"<<L2error(x,h,n)<<"\n";
 
     //output:
-    write_data(x,h);
+    write_data(x,h,"plot/u.dat");
 
 }
 
 int main(){
-    int n;
-    for (int i = 4; i < 6; i++)
-    {
-        n = pow(2,i);
-        Laplace(n);
-    }
+    int n=50;  
+    Laplace(n);
+    
 
     return 0;
 }

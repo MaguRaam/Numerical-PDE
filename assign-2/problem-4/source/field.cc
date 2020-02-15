@@ -114,3 +114,11 @@ double field::read(int j,int i)const{
     return u[j][i];
 }
  
+field& field::operator=(const field& otherfield){
+    assert(N = otherfield.N);
+    for (int j=0;j<=N;j++){
+        for (int i=0;i<=N;i++)
+            u[j][i] = otherfield.u[j][i];
+    }
+    return *this;
+}

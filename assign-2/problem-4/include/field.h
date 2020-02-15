@@ -29,6 +29,7 @@ public:
     
 
     double& operator()(int j,int i);
+    field& operator=(const field& otherfield);
 
 private:
     double L;

@@ -7,6 +7,9 @@ class poisson{
         poisson(double l, int n);
         ~poisson();
         void initialize_b(int n);
+        int solve();
+        void exact_solution(int n);
+         
 
     private:
         double L;
@@ -15,6 +18,9 @@ class poisson{
         field* b;
         field* u;
         field* un;
+        
+
+        
 
 };
 

@@ -8,10 +8,10 @@
             "name": "g++ build and debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "/home/ratnesh/Desktop/Numerical-PDE/2d/Poisson/main",
+            "program": "/home/ratnesh/Desktop/Numerical-PDE/assignment-2/problem-3/main",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "/home/ratnesh/Desktop/Numerical-PDE/2d/Poisson",
+            "cwd": "/home/ratnesh/Desktop/Numerical-PDE/assignment-2/problem-3",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
@@ -22,7 +22,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": " ",
+            "preLaunchTask": "",
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ]

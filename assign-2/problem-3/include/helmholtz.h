@@ -13,6 +13,7 @@ public:
     void compute_utilde();
     void compute_u();
     void set_bcs();
+    void L2error();
      
 
 

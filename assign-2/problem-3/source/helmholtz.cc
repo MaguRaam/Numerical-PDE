@@ -13,11 +13,18 @@ helmholtz::helmholtz(double l,int n):L(l),N(n),h(L/N){
 
 void helmholtz::initialize_b(double (*func)(const double &, const double &)){
     b->set_function(func);
+    set_bcs();
     b->write_output("../plot/","b.dat");
 }
 
 
 //STEP-1:Transform b to b~ 
+void helmholtz::set_bcs(){
+    for (int i=1;i<N;i++){
+        (*b)(0,i) -= sin(10*M_PI*i*h);
+        (*b)(N,i) -= sin(10*M_PI*i*h);
+    }
+}
 
 double helmholtz::project_field_on_eigenbasis(int q,int p){
    double value = 0.0;
@@ -76,18 +83,20 @@ void helmholtz::compute_u(){
         }
               
     }
+    
     u->write_output("../plot/","u.dat");
      
 }
 
 
-void helmholtz::set_bcs(){
-    for (int i=1;i<N;i++){
-        (*b)(0,i) -= sin(10*M_PI*i*h);
-        (*b)(N,i) -= sin(10*M_PI*i*h);
+void helmholtz::L2error(){
+    double value=0.0;
+    for (int j=1;j<N;j++){
+        for (int i=1;i<N;i++)
+            value += pow(((*u)(j,i) - sin(10*M_PI*i*h)*sin(10*M_PI*j*h)) ,2.0);
     }
+    cout<<"N = "<<N<<"\t\t\terror = "<<sqrt(value)<<"\n";
 }
-
  
 
 

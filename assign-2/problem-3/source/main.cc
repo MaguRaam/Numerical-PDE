@@ -9,11 +9,10 @@ int main(){
 
 	//grid:
 	double L = 1.0;
-	int N = 20;
+	int N = 10;
 
 	helmholtz problem(L,N);
 	problem.initialize_b(rhs);
-	problem.set_bcs();
 
 	//STEP-1:Transform b to b~ 
 	problem.compute_btilde();
@@ -23,6 +22,7 @@ int main(){
 
 	//STEP-3:Transform x~ to x
 	problem.compute_u();
+	problem.L2error();
 
 
 	return 0;
@@ -32,14 +32,4 @@ int main(){
 
 
 
-
-//problem.set_bcs();
-
-	//STEP-1:Transform b to b~ 
-	//problem.compute_btilde();
-
-	//STEP-2:Solve for u~ = b~/lambda
-	//problem.compute_utilde();
-
-	//STEP-3:Transform x~ to x
-	//problem.compute_u();
+ 

@@ -5,7 +5,10 @@ CMakeFiles/main.dir/source/field.cc.o: ../include/field.h
 CMakeFiles/main.dir/source/field.cc.o: ../source/field.cc
 
 CMakeFiles/main.dir/source/main.cc.o: ../include/field.h
+CMakeFiles/main.dir/source/main.cc.o: ../include/poisson.h
 CMakeFiles/main.dir/source/main.cc.o: ../source/main.cc
 
+CMakeFiles/main.dir/source/poisson.cc.o: ../include/field.h
+CMakeFiles/main.dir/source/poisson.cc.o: ../include/poisson.h
 CMakeFiles/main.dir/source/poisson.cc.o: ../source/poisson.cc
 

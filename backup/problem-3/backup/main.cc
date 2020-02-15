@@ -121,7 +121,7 @@ void fourier_tranform(double** b_tilde,double** b,int ny,int nx,double hx,double
     }   
 }
 
-//STEP-2:  xi~ = bi~/lambdai
+	//STEP-2:  xi~ = bi~/lambdai
 void solve(double** x_tilde,double** b_tilde,int nx,int ny,double hx,double hy){
     for (int q=1;q<=ny-1;q++){
         for (int p=1;p<=nx-1;p++)

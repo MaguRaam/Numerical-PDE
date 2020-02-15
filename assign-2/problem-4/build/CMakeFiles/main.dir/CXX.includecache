@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-4/include/field.h
+iostream
+-
+fstream
+-
+cassert
+-
+string
+-
+cmath
+-
+
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-4/source/field.cc
+../include/field.h
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-4/include/field.h
+
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-4/source/main.cc
+../include/field.h
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-4/include/field.h
+
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-4/source/poisson.cc
+

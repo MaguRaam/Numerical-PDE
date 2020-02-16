@@ -35,6 +35,8 @@ void poisson::exact_solution(int n){
 }
  
 
+  
+
 
  int poisson::solve(){
      int iter = 0;
@@ -49,5 +51,6 @@ void poisson::exact_solution(int n){
 
      }
      u->write_output("../plot/","u.dat");
+     
      return iter;
  }

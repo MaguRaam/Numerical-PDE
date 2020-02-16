@@ -18,7 +18,8 @@ class poisson{
         field* b;
         field* u;
         field* un;
-        
+
+       
 
         
 

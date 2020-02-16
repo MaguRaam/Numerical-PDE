@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/include/thomas.h
+vector
+-
+iostream
+-
+fstream
+-
+cmath
+-
+string
+-
+
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/source/main.cc
+../include/thomas.h
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/include/thomas.h
+
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/source/thomas.cc
+../include/thomas.h
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/include/thomas.h
+

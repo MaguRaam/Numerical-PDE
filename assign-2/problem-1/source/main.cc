@@ -10,10 +10,10 @@ double L2error(const vector<double>& u,const vector<double>& uexact){
 
 
 
-void write_data(const vector<double>& u,const string filename){
+void write_data(const vector<double>& u,const string filename,double h){
     ofstream output(filename);
     for (unsigned int i=0;i<u.size();i++)
-        output<<u[i]<<"\n";
+        output<<i*h<<"\t\t\t"<<u[i]<<"\n";
     output.close();
 }
 
@@ -42,9 +42,8 @@ double poisson(int N,int beta){
 		xexact[i-1] = (1.0/(beta*beta*M_PI*M_PI))*sin(beta*M_PI*i*h);
 	
 	//write solution:
-	write_data(q,"../plot/q.dat");
-	write_data(x,"../plot/u.dat");
-	write_data(xexact,"../plot/uexact.dat");
+	write_data(x,"../plot/u100.dat",h);
+	write_data(xexact,"../plot/uexact100.dat",h);
 
 	return L2error(x,xexact);
 }
@@ -62,9 +61,9 @@ int main(){
 
 	//Part a:
 	cout<<"ngpts"<<"\t\t\t"<<"L2error"<<"\n";
-	for (unsigned int i = 0;i<N.size();i++){
-		cout<<N[i]<<"\t\t\t"<<poisson(N[i],beta[1])<<"\n";
-	}
+	 
+    cout<<N[1]<<"\t\t\t"<<poisson(N[1],beta[2])<<"\n";
+ 
 
 
 

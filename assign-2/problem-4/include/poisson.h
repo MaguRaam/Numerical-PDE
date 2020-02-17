@@ -19,6 +19,8 @@ class poisson{
         field* u;
         field* un;
 
+        double residual();
+
        
 
         

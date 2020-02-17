@@ -35,20 +35,31 @@ void poisson::exact_solution(int n){
 }
  
 
-  
+ double poisson::residual(){
+     double value=0.0;
+     double error=0.0;
+     
+     for (int j=1;j<N;j++){
+         for (int i=1;i<N;i++){
+             error = (b->read(j,i)*h*h) - (u->read(j,i+1) + u->read(j,i-1) + u->read(j+1,i) + u->read(j-1,i) - 4*u->read(j,i) );
+             value += pow(error,2.0)*h*h;
+         }
+     }
+
+     return sqrt(value);
+ } 
 
 
  int poisson::solve(){
      int iter = 0;
      
-     while (iter <= 1000){
+     while (residual() > 1.0e-10){
          iter++;
          (*un) = (*u);
          for (int j=1;j<N;j++){
              for (int i=1;i<N;i++)
                 (*u)(j,i) = 0.25*( (-(b->read(j,i))*h*h)  + ( un->read(j,i+1) + un->read(j,i-1) + un->read(j+1,i) + un->read(j-1,i)   )   );
          }
-
      }
      u->write_output("../plot/","u.dat");
      

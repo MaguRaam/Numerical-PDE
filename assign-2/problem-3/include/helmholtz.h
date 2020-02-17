@@ -12,8 +12,7 @@ public:
     void compute_btilde();
     void compute_utilde();
     void compute_u();
-    void set_bcs();
-    void L2error();
+    double L2error();
      
 
 
@@ -29,6 +28,7 @@ private:
     double project_field_on_eigenbasis(int q, int p);
     double eigenvalue(int q, int p);
     double expand_field_using_eigenbasis(int j, int i);
+    void set_bcs();
 };
 
 #endif

@@ -15,14 +15,15 @@ void helmholtz::initialize_b(double (*func)(const double &, const double &)){
     b->set_function(func);
     set_bcs();
     b->write_output("../plot/","b.dat");
+     
 }
 
 
 //STEP-1:Transform b to b~ 
 void helmholtz::set_bcs(){
     for (int i=1;i<N;i++){
-        (*b)(0,i) -= sin(10*M_PI*i*h);
-        (*b)(N,i) -= sin(10*M_PI*i*h);
+        (*b)(1,i) -= sin(10*M_PI*i*h)*(1.0/(h*h));
+        (*b)(N-1,i) -= sin(10*M_PI*i*h)*(1.0/(h*h));
     }
 }
 
@@ -49,7 +50,7 @@ void helmholtz::compute_btilde(){
 //STEP-2:Solve for u~ = b~/lambda
 
 double helmholtz::eigenvalue(int q,int p){
-    return -( (4.0/h*h)*(pow(sin((M_PI*q)/(2*N)),2))    ) - ( (4.0/h*h)*(pow(sin((M_PI*p)/(2*N)),2)) ) + 1000;
+    return -( (4.0/h*h)*(pow(sin((M_PI*q)/(2*N)),2))    ) - ( (4.0/h*h)*(pow(sin((M_PI*p)/(2*N)),2)) ) + 1000.0;
 }
 
 void helmholtz::compute_utilde(){
@@ -83,21 +84,21 @@ void helmholtz::compute_u(){
         }
               
     }
-    
+ 
     u->write_output("../plot/","u.dat");
      
 }
 
-
-void helmholtz::L2error(){
-    double value=0.0;
+double helmholtz::L2error(){
+    double error = 0.0;
     for (int j=1;j<N;j++){
-        for (int i=1;i<N;i++)
-            value += pow(((*u)(j,i) - sin(10*M_PI*i*h)*sin(10*M_PI*j*h)) ,2.0);
+        for (int i=1;i<N;i++){
+            error += pow( u->read(j,i) - (sin(10.0*M_PI*i*h))*(cos(10.0*M_PI*j*h)),2.0)*h*h;
+        }
     }
-    cout<<"N = "<<N<<"\t\t\terror = "<<sqrt(value)<<"\n";
+
+    return sqrt(error);
 }
- 
 
 
 helmholtz::~helmholtz(){

@@ -84,14 +84,14 @@ void field::write_output(string folderpath, string filename)
     u_.setf(std::ios::showpos);
     u_.precision(13);
 
-    for (int i = 0; i <= N; i++)
+    for (int i = 1; i < N; i++)
         x << i * h << "\n";
-    for (int j = 0; j <= N; j++)
+    for (int j = 1; j < N; j++)
         y << j * h << "\n";
 
-    for (int j = 0; j <= N; j++)
+    for (int j = 1; j < N; j++)
     {
-        for (int i = 0; i <= N; i++)
+        for (int i = 1; i < N; i++)
         {
             u_ << u[j][i] << " ";
         }

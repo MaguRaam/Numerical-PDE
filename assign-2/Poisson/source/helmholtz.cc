@@ -30,7 +30,7 @@ void helmholtz::initialize_b(double (*func)(const double &, const double &)){
 
 //eigenvalue:
 double helmholtz::eigenvalue(int q,int p){
-    return -( (4.0/h*h)*(pow(sin((M_PI*q)/(2*N)),2))    ) - ( (4.0/h*h)*(pow(sin((M_PI*p)/(2*N)),2)) );
+    return -( (4.0/(h*h))*(pow(sin((M_PI*q)/(2*N)),2))    ) - ( (4.0/(h*h))*(pow(sin((M_PI*p)/(2*N)),2)) );
 }
 
 
@@ -97,6 +97,7 @@ double helmholtz::L2error(){
     for (int j=1;j<N;j++){
         for (int i=1;i<N;i++){
             error += pow( u->read(j,i) - (norm*sin(10.0*M_PI*i*h)*sin(10.0*M_PI*j*h)),2.0)*h*h;
+            cout<<"error = "<<error<<"\n";
         }
     }
 

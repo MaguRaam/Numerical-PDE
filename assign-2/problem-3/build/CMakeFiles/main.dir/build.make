@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3
+CMAKE_SOURCE_DIR = /home/ratnesh/Desktop/Numerical-PDE/assign-2/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/build
+CMAKE_BINARY_DIR = /home/ratnesh/Desktop/Numerical-PDE/assign-2/test/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/main.dir/flags.make
 
 CMakeFiles/main.dir/source/field.cc.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/source/field.cc.o: ../source/field.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/source/field.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/source/field.cc.o -c /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/source/field.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/assign-2/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/source/field.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/source/field.cc.o -c /home/ratnesh/Desktop/Numerical-PDE/assign-2/test/source/field.cc
 
 CMakeFiles/main.dir/source/field.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/source/field.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/source/field.cc > CMakeFiles/main.dir/source/field.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ratnesh/Desktop/Numerical-PDE/assign-2/test/source/field.cc > CMakeFiles/main.dir/source/field.cc.i
 
 CMakeFiles/main.dir/source/field.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/source/field.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/source/field.cc -o CMakeFiles/main.dir/source/field.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ratnesh/Desktop/Numerical-PDE/assign-2/test/source/field.cc -o CMakeFiles/main.dir/source/field.cc.s
 
 CMakeFiles/main.dir/source/field.cc.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/main.dir/source/field.cc.o.provides.build: CMakeFiles/main.dir/source
 
 CMakeFiles/main.dir/source/helmholtz.cc.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/source/helmholtz.cc.o: ../source/helmholtz.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/source/helmholtz.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/source/helmholtz.cc.o -c /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/source/helmholtz.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/assign-2/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/source/helmholtz.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/source/helmholtz.cc.o -c /home/ratnesh/Desktop/Numerical-PDE/assign-2/test/source/helmholtz.cc
 
 CMakeFiles/main.dir/source/helmholtz.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/source/helmholtz.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/source/helmholtz.cc > CMakeFiles/main.dir/source/helmholtz.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ratnesh/Desktop/Numerical-PDE/assign-2/test/source/helmholtz.cc > CMakeFiles/main.dir/source/helmholtz.cc.i
 
 CMakeFiles/main.dir/source/helmholtz.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/source/helmholtz.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/source/helmholtz.cc -o CMakeFiles/main.dir/source/helmholtz.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ratnesh/Desktop/Numerical-PDE/assign-2/test/source/helmholtz.cc -o CMakeFiles/main.dir/source/helmholtz.cc.s
 
 CMakeFiles/main.dir/source/helmholtz.cc.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/main.dir/source/helmholtz.cc.o.provides.build: CMakeFiles/main.dir/so
 
 CMakeFiles/main.dir/source/main.cc.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/source/main.cc.o: ../source/main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/source/main.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/source/main.cc.o -c /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/source/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/assign-2/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/source/main.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/source/main.cc.o -c /home/ratnesh/Desktop/Numerical-PDE/assign-2/test/source/main.cc
 
 CMakeFiles/main.dir/source/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/source/main.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/source/main.cc > CMakeFiles/main.dir/source/main.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ratnesh/Desktop/Numerical-PDE/assign-2/test/source/main.cc > CMakeFiles/main.dir/source/main.cc.i
 
 CMakeFiles/main.dir/source/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/source/main.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/source/main.cc -o CMakeFiles/main.dir/source/main.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ratnesh/Desktop/Numerical-PDE/assign-2/test/source/main.cc -o CMakeFiles/main.dir/source/main.cc.s
 
 CMakeFiles/main.dir/source/main.cc.o.requires:
 
@@ -143,7 +143,7 @@ main: CMakeFiles/main.dir/source/helmholtz.cc.o
 main: CMakeFiles/main.dir/source/main.cc.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/assign-2/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -162,6 +162,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3 /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3 /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/build /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/build /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ratnesh/Desktop/Numerical-PDE/assign-2/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ratnesh/Desktop/Numerical-PDE/assign-2/test /home/ratnesh/Desktop/Numerical-PDE/assign-2/test /home/ratnesh/Desktop/Numerical-PDE/assign-2/test/build /home/ratnesh/Desktop/Numerical-PDE/assign-2/test/build /home/ratnesh/Desktop/Numerical-PDE/assign-2/test/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main.dir/depend
 

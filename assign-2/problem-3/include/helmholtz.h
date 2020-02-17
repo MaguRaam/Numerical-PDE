@@ -6,29 +6,36 @@
 class helmholtz
 {
 public:
-    helmholtz(double l, int n);
-    ~helmholtz();
-    void initialize_b(double (*func)(const double &, const double &));
-    void compute_btilde();
-    void compute_utilde();
-    void compute_u();
-    double L2error();
-     
+     helmholtz(double l, int n);
+     ~helmholtz();
+     void initialize_b(double (*func)(const double &, const double &));
+     void compute_btilde();
+     void compute_utilde();
+     void compute_u();
+     double L2error();
+     double Linfyerror();
+
+     //Auxillary functions:
+     double project_field_on_eigenbasis(int q, int p);
+     double eigenvalue(int q, int p);
+     double expand_field_using_eigenbasis(int j, int i);
+     void set_bcs_b();
+     void set_bcs_u();
 
 
 private:
-    double L;
-    int N;
-    double h;
-    field *b;
-    field *btilde;
-    field *&utilde = btilde;
-    field *&u = b;
+     double L;
+     int N;
+     double h;
+     field *b;
+     field *btilde;
+     field *utilde;
+     field *u;
 
-    double project_field_on_eigenbasis(int q, int p);
-    double eigenvalue(int q, int p);
-    double expand_field_using_eigenbasis(int j, int i);
-    void set_bcs();
+      
+    
 };
+
+
 
 #endif

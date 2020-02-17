@@ -10,10 +10,12 @@ double L2error(const vector<double>& u,const vector<double>& uexact){
 
 
 
-void write_data(const vector<double>& u,const string filename,double h){
+void write_data(const vector<double>& u,const string filename,double h,int beta){
     ofstream output(filename);
+    output<<0.0<<"\t\t\t"<<0.0<<"\n";
     for (unsigned int i=0;i<u.size();i++)
-        output<<i*h<<"\t\t\t"<<u[i]<<"\n";
+        output<<(i+1)*h<<"\t\t\t"<<(1.0/(beta*beta*M_PI*M_PI))*u[i]<<"\n";
+    output<<1.0<<"\t\t\t"<<0.0<<"\n";
     output.close();
 }
 
@@ -42,8 +44,8 @@ double poisson(int N,int beta){
 		xexact[i-1] = (1.0/(beta*beta*M_PI*M_PI))*sin(beta*M_PI*i*h);
 	
 	//write solution:
-	write_data(x,"../plot/u100.dat",h);
-	write_data(xexact,"../plot/uexact100.dat",h);
+	write_data(x,"../plot/u100.dat",h,beta);
+	write_data(xexact,"../plot/uexact100.dat",h,beta);
 
 	return L2error(x,xexact);
 }

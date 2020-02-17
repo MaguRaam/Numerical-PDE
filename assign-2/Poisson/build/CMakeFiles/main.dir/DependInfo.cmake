@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ratnesh/Desktop/Numerical-PDE/assign-2/test/source/field.cc" "/home/ratnesh/Desktop/Numerical-PDE/assign-2/test/build/CMakeFiles/main.dir/source/field.cc.o"
-  "/home/ratnesh/Desktop/Numerical-PDE/assign-2/test/source/helmholtz.cc" "/home/ratnesh/Desktop/Numerical-PDE/assign-2/test/build/CMakeFiles/main.dir/source/helmholtz.cc.o"
-  "/home/ratnesh/Desktop/Numerical-PDE/assign-2/test/source/main.cc" "/home/ratnesh/Desktop/Numerical-PDE/assign-2/test/build/CMakeFiles/main.dir/source/main.cc.o"
+  "/home/ratnesh/Desktop/Numerical-PDE/assign-2/Poisson/source/field.cc" "/home/ratnesh/Desktop/Numerical-PDE/assign-2/Poisson/build/CMakeFiles/main.dir/source/field.cc.o"
+  "/home/ratnesh/Desktop/Numerical-PDE/assign-2/Poisson/source/helmholtz.cc" "/home/ratnesh/Desktop/Numerical-PDE/assign-2/Poisson/build/CMakeFiles/main.dir/source/helmholtz.cc.o"
+  "/home/ratnesh/Desktop/Numerical-PDE/assign-2/Poisson/source/main.cc" "/home/ratnesh/Desktop/Numerical-PDE/assign-2/Poisson/build/CMakeFiles/main.dir/source/main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/test/include/field.h
+iostream
+-
+fstream
+-
+cassert
+-
+string
+-
+cmath
+-
+
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/test/include/helmholtz.h
+field.h
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/test/include/field.h
+
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/test/source/field.cc
+../include/field.h
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/test/include/field.h
+
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/test/source/helmholtz.cc
+../include/helmholtz.h
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/test/include/helmholtz.h
+
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/test/source/main.cc
+../include/helmholtz.h
+/home/ratnesh/Desktop/Numerical-PDE/assign-2/test/include/helmholtz.h
+

@@ -1,11 +1,11 @@
 #include "../include/helmholtz.h"
 
 double rhs(const double& x,const double& y){
-	 return (1000.0-(200.0*M_PI*M_PI))*(sin(10.0*M_PI*x))*(cos(10.0*M_PI*y));
+	 return (1000.0-(200.0*M_PI*M_PI))*(sin(10.0*M_PI*x))*(sin(10.0*M_PI*y));
 }
 
 double exact_solution(const double& x,const double& y){	 
-	return sin(10.0*M_PI*x)*cos(10.0*M_PI*y);
+	return sin(10.0*M_PI*x)*sin(10.0*M_PI*y);
 }
 
 void convergence(int N){

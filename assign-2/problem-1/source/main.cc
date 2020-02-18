@@ -14,7 +14,7 @@ void write_data(const vector<double>& u,const string filename,double h,int beta)
     ofstream output(filename);
     output<<0.0<<"\t\t\t"<<0.0<<"\n";
     for (unsigned int i=0;i<u.size();i++)
-        output<<(i+1)*h<<"\t\t\t"<<(1.0/(beta*beta*M_PI*M_PI))*u[i]<<"\n";
+        output<<(i+1)*h<<"\t\t\t"<<(beta*beta*M_PI*M_PI)*u[i]<<"\n";
     output<<1.0<<"\t\t\t"<<0.0<<"\n";
     output.close();
 }

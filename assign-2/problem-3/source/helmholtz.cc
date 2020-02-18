@@ -24,7 +24,7 @@ helmholtz::~helmholtz(){
 //initialize rhs of helmholtz equation:
 void helmholtz::set_bcs_b(){
     for (int i=1;i<N;i++){
-        (*b)(1,i) -= sin(10*M_PI*i*h)*(1.0/(h*h));
+        (*b)(1,i) -=   sin(10*M_PI*i*h)*(1.0/(h*h));
         (*b)(N-1,i) -= sin(10*M_PI*i*h)*(1.0/(h*h));
     }
 }
@@ -33,7 +33,7 @@ void helmholtz::set_bcs_b(){
 void helmholtz::initialize_b(double (*func)(const double &, const double &)){
     b->set_function(func);
     b->write_output("../plot/","b.dat");
-    set_bcs_b();
+    //set_bcs_b();
     b->write_output("../plot/","bmodified.dat");
      
 }
@@ -73,7 +73,7 @@ void helmholtz::compute_utilde(){
             (*utilde)(q,p) = (btilde->read(q,p))/eigenvalue(q,p);
         }
     }
-    utilde->write_output("../plot/","utilde.dat");
+    //utilde->write_output("../plot/","utilde.dat");
 }
 
 //STEP-3: Compute u:
@@ -104,7 +104,7 @@ void helmholtz::compute_u(){
         }
               
     }
-    set_bcs_u();
+    //set_bcs_u();
     u->write_output("../plot/","u.dat");
      
 }
@@ -113,7 +113,7 @@ double helmholtz::L2error(){
     double error = 0.0;
     for (int j=0;j<=N;j++){
         for (int i=0;i<=N;i++){
-            error += pow( ( (u->read(j,i)) - (sin(10.0*M_PI*i*h)*cos(10.0*M_PI*j*h))),2.0)*h*h;
+            error += pow( ( (u->read(j,i)) - (sin(10.0*M_PI*i*h)*sin(10.0*M_PI*j*h))),2.0)*h*h;
             //cout<<"error = "<<error<<"\n";
         }
     }
@@ -126,7 +126,7 @@ double helmholtz::Linfyerror(){
     double value = 0.0;
     for (int j=0;j<=N;j++){
         for (int i=0;i<=N;i++){
-             value = abs(u->read(j,i) - (sin(10.0*M_PI*i*h)*cos(10.0*M_PI*j*h)) );
+             value = abs(u->read(j,i) - (sin(10.0*M_PI*i*h)*sin(10.0*M_PI*j*h)) );
              if (value > error){
                  error = value;
              } 

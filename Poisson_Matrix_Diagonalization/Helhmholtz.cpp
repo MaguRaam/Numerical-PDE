@@ -26,7 +26,7 @@ int main() {
 	double **RHS_Tilde, **u_Tilde, **Temp ;
 	double L2_Error = 0.0, Max_Error = 0.0, hx, hy  ;
 
-	int Nx = 160, Ny = 160, i, j, k ;
+	int Nx = 1024, Ny = 1024, i, j, k ;
 
 	x = new double[Nx+1] ;  y = new double[Ny+1] ;
 	Allocate_2D_R(uExact, Nx+1, Ny+1) ; Allocate_2D_R(u, Nx+1, Ny+1) ; 

@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/main.dir/source/field.cc.o"
   "CMakeFiles/main.dir/source/helmholtz.cc.o"
   "CMakeFiles/main.dir/source/main.cc.o"
   "main.pdb"

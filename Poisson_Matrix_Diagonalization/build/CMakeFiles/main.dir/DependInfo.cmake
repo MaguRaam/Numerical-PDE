@@ -4,9 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/source/field.cc" "/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/build/CMakeFiles/main.dir/source/field.cc.o"
-  "/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/source/helmholtz.cc" "/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/build/CMakeFiles/main.dir/source/helmholtz.cc.o"
-  "/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/source/main.cc" "/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-3/build/CMakeFiles/main.dir/source/main.cc.o"
+  "/home/ratnesh/Desktop/Numerical-PDE/Poisson_Matrix_Diagonalization/source/helmholtz.cc" "/home/ratnesh/Desktop/Numerical-PDE/Poisson_Matrix_Diagonalization/build/CMakeFiles/main.dir/source/helmholtz.cc.o"
+  "/home/ratnesh/Desktop/Numerical-PDE/Poisson_Matrix_Diagonalization/source/main.cc" "/home/ratnesh/Desktop/Numerical-PDE/Poisson_Matrix_Diagonalization/build/CMakeFiles/main.dir/source/main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -20,6 +20,7 @@
         "bitset": "cpp",
         "initializer_list": "cpp",
         "vector": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "chrono": "cpp"
     }
 }

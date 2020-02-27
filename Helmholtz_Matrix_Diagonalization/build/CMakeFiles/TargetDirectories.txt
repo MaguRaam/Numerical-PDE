@@ -1,0 +1,3 @@
+/home/ratnesh/Desktop/Numerical-PDE/Helmholtz_Matrix_Diagonalization/build/CMakeFiles/rebuild_cache.dir
+/home/ratnesh/Desktop/Numerical-PDE/Helmholtz_Matrix_Diagonalization/build/CMakeFiles/edit_cache.dir
+/home/ratnesh/Desktop/Numerical-PDE/Helmholtz_Matrix_Diagonalization/build/CMakeFiles/main.dir

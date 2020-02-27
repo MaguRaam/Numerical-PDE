@@ -1,4 +1,4 @@
-# Install script for directory: /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1
+# Install script for directory: /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ratnesh/Desktop/Numerical-PDE/Helmholtz_Matrix_Diagonalization/include/helmholtz.h
+iostream
+-
+fstream
+-
+cstring
+-
+cmath
+-
+chrono
+-
+
+/home/ratnesh/Desktop/Numerical-PDE/Helmholtz_Matrix_Diagonalization/source/helmholtz.cc
+../include/helmholtz.h
+/home/ratnesh/Desktop/Numerical-PDE/Helmholtz_Matrix_Diagonalization/include/helmholtz.h
+
+/home/ratnesh/Desktop/Numerical-PDE/Helmholtz_Matrix_Diagonalization/source/main.cc
+../include/helmholtz.h
+/home/ratnesh/Desktop/Numerical-PDE/Helmholtz_Matrix_Diagonalization/include/helmholtz.h
+

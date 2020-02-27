@@ -6,7 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/include/thomas.h
+/home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/include/functions.h
+vector
+-
+cmath
+-
+fstream
+-
+string
+-
+
+/home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/include/thomas.h
 vector
 -
 iostream
@@ -18,11 +28,15 @@ cmath
 string
 -
 
-/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/source/main.cc
-../include/thomas.h
-/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/include/thomas.h
+/home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/source/functions.cc
+../include/functions.h
+/home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/include/functions.h
 
-/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/source/thomas.cc
+/home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/source/main.cc
 ../include/thomas.h
-/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/include/thomas.h
+/home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/include/thomas.h
+
+/home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/source/thomas.cc
+../include/thomas.h
+/home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/include/thomas.h
 

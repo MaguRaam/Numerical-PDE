@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1
+CMAKE_SOURCE_DIR = /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/build
+CMAKE_BINARY_DIR = /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/build/CMakeFiles /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/build/CMakeFiles /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ main: cmake_check_build_system
 main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
+
+source/functions.o: source/functions.cc.o
+
+.PHONY : source/functions.o
+
+# target to build an object file
+source/functions.cc.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/source/functions.cc.o
+.PHONY : source/functions.cc.o
+
+source/functions.i: source/functions.cc.i
+
+.PHONY : source/functions.i
+
+# target to preprocess a source file
+source/functions.cc.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/source/functions.cc.i
+.PHONY : source/functions.cc.i
+
+source/functions.s: source/functions.cc.s
+
+.PHONY : source/functions.s
+
+# target to generate assembly for a file
+source/functions.cc.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/source/functions.cc.s
+.PHONY : source/functions.cc.s
 
 source/main.o: source/main.cc.o
 
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... main"
+	@echo "... source/functions.o"
+	@echo "... source/functions.i"
+	@echo "... source/functions.s"
 	@echo "... source/main.o"
 	@echo "... source/main.i"
 	@echo "... source/main.s"

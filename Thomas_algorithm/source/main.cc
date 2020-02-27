@@ -1,5 +1,4 @@
 #include "../include/thomas.h" 
-
 double L2error(const vector<double>& u,const vector<double>& uexact){
 	double error = 0.0;
 	int N = u.size()+1; 
@@ -18,6 +17,7 @@ void write_data(const vector<double>& u,const string filename,double h,int beta)
     output<<1.0<<"\t\t\t"<<0.0<<"\n";
     output.close();
 }
+
 
 double poisson(int N,int beta){
 	//grid:
@@ -60,13 +60,7 @@ int main(){
 	//beta:
 	vector<int> beta{1,10,100};
 
-
-	//Part a:
-	cout<<"ngpts"<<"\t\t\t"<<"L2error"<<"\n";
-	 
-    cout<<N[1]<<"\t\t\t"<<poisson(N[1],beta[2])<<"\n";
- 
-
+	poisson(N[1],beta[2]);
 
 
 	 

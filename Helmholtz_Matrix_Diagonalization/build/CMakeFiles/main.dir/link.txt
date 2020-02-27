@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -g -Wextra   CMakeFiles/main.dir/source/helmholtz.cc.o CMakeFiles/main.dir/source/main.cc.o  -o main 

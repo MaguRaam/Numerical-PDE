@@ -6,5 +6,5 @@ CXX_FLAGS =  -Wall -Wextra   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/include 
+CXX_INCLUDES = -I/home/ratnesh/Desktop/Numerical-PDE/Thomas_algorithm/include 
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1
+CMAKE_SOURCE_DIR = /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/build
+CMAKE_BINARY_DIR = /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -57,18 +57,42 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
+CMakeFiles/main.dir/source/functions.cc.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/source/functions.cc.o: ../source/functions.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/source/functions.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/source/functions.cc.o -c /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/source/functions.cc
+
+CMakeFiles/main.dir/source/functions.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/source/functions.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/source/functions.cc > CMakeFiles/main.dir/source/functions.cc.i
+
+CMakeFiles/main.dir/source/functions.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/source/functions.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/source/functions.cc -o CMakeFiles/main.dir/source/functions.cc.s
+
+CMakeFiles/main.dir/source/functions.cc.o.requires:
+
+.PHONY : CMakeFiles/main.dir/source/functions.cc.o.requires
+
+CMakeFiles/main.dir/source/functions.cc.o.provides: CMakeFiles/main.dir/source/functions.cc.o.requires
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/source/functions.cc.o.provides.build
+.PHONY : CMakeFiles/main.dir/source/functions.cc.o.provides
+
+CMakeFiles/main.dir/source/functions.cc.o.provides.build: CMakeFiles/main.dir/source/functions.cc.o
+
+
 CMakeFiles/main.dir/source/main.cc.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/source/main.cc.o: ../source/main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/source/main.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/source/main.cc.o -c /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/source/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/source/main.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/source/main.cc.o -c /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/source/main.cc
 
 CMakeFiles/main.dir/source/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/source/main.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/source/main.cc > CMakeFiles/main.dir/source/main.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/source/main.cc > CMakeFiles/main.dir/source/main.cc.i
 
 CMakeFiles/main.dir/source/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/source/main.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/source/main.cc -o CMakeFiles/main.dir/source/main.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/source/main.cc -o CMakeFiles/main.dir/source/main.cc.s
 
 CMakeFiles/main.dir/source/main.cc.o.requires:
 
@@ -83,16 +107,16 @@ CMakeFiles/main.dir/source/main.cc.o.provides.build: CMakeFiles/main.dir/source/
 
 CMakeFiles/main.dir/source/thomas.cc.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/source/thomas.cc.o: ../source/thomas.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/source/thomas.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/source/thomas.cc.o -c /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/source/thomas.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/source/thomas.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/source/thomas.cc.o -c /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/source/thomas.cc
 
 CMakeFiles/main.dir/source/thomas.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/source/thomas.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/source/thomas.cc > CMakeFiles/main.dir/source/thomas.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/source/thomas.cc > CMakeFiles/main.dir/source/thomas.cc.i
 
 CMakeFiles/main.dir/source/thomas.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/source/thomas.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/source/thomas.cc -o CMakeFiles/main.dir/source/thomas.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/source/thomas.cc -o CMakeFiles/main.dir/source/thomas.cc.s
 
 CMakeFiles/main.dir/source/thomas.cc.o.requires:
 
@@ -107,17 +131,19 @@ CMakeFiles/main.dir/source/thomas.cc.o.provides.build: CMakeFiles/main.dir/sourc
 
 # Object files for target main
 main_OBJECTS = \
+"CMakeFiles/main.dir/source/functions.cc.o" \
 "CMakeFiles/main.dir/source/main.cc.o" \
 "CMakeFiles/main.dir/source/thomas.cc.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
+main: CMakeFiles/main.dir/source/functions.cc.o
 main: CMakeFiles/main.dir/source/main.cc.o
 main: CMakeFiles/main.dir/source/thomas.cc.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -125,6 +151,7 @@ CMakeFiles/main.dir/build: main
 
 .PHONY : CMakeFiles/main.dir/build
 
+CMakeFiles/main.dir/requires: CMakeFiles/main.dir/source/functions.cc.o.requires
 CMakeFiles/main.dir/requires: CMakeFiles/main.dir/source/main.cc.o.requires
 CMakeFiles/main.dir/requires: CMakeFiles/main.dir/source/thomas.cc.o.requires
 
@@ -135,6 +162,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1 /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1 /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/build /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/build /home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1 /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1 /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/build /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/build /home/ratnesh/Desktop/Numerical-PDE/backup/problem-1/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main.dir/depend
 

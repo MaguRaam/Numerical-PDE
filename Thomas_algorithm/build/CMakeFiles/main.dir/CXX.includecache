@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/include/thomas.h
+/home/ratnesh/Desktop/Numerical-PDE/Thomas_algorithm/include/thomas.h
 vector
 -
 iostream
@@ -18,11 +18,11 @@ cmath
 string
 -
 
-/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/source/main.cc
+/home/ratnesh/Desktop/Numerical-PDE/Thomas_algorithm/source/main.cc
 ../include/thomas.h
-/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/include/thomas.h
+/home/ratnesh/Desktop/Numerical-PDE/Thomas_algorithm/include/thomas.h
 
-/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/source/thomas.cc
+/home/ratnesh/Desktop/Numerical-PDE/Thomas_algorithm/source/thomas.cc
 ../include/thomas.h
-/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/include/thomas.h
+/home/ratnesh/Desktop/Numerical-PDE/Thomas_algorithm/include/thomas.h
 

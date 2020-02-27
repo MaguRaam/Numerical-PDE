@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/source/main.cc" "/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/build/CMakeFiles/main.dir/source/main.cc.o"
-  "/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/source/thomas.cc" "/home/ratnesh/Desktop/Numerical-PDE/assign-2/problem-1/build/CMakeFiles/main.dir/source/thomas.cc.o"
+  "/home/ratnesh/Desktop/Numerical-PDE/Thomas_algorithm/source/main.cc" "/home/ratnesh/Desktop/Numerical-PDE/Thomas_algorithm/build/CMakeFiles/main.dir/source/main.cc.o"
+  "/home/ratnesh/Desktop/Numerical-PDE/Thomas_algorithm/source/thomas.cc" "/home/ratnesh/Desktop/Numerical-PDE/Thomas_algorithm/build/CMakeFiles/main.dir/source/thomas.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

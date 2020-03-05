@@ -1,3 +1,0 @@
-/home/ratnesh/Desktop/Numerical-PDE/assign-2/Poisson/build/CMakeFiles/rebuild_cache.dir
-/home/ratnesh/Desktop/Numerical-PDE/assign-2/Poisson/build/CMakeFiles/edit_cache.dir
-/home/ratnesh/Desktop/Numerical-PDE/assign-2/Poisson/build/CMakeFiles/main.dir

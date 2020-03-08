@@ -1,6 +1,14 @@
-cmake_minimum_required(VERSION 3.7.2)
+cmake_minimum_required(VERSION 3.7)
+set (CMAKE_CXX_STANDARD 11)
 
-project(cmake)
+# Name of the project
+project(Diffusion)
+include_directories(include)
+file(GLOB SOURCES "source/*.cc")
 
-add_subdirectory(library)
-add_subdirectory(code)
+# Add warnings 
+if ( CMAKE_COMPILER_IS_GNUCC )
+    set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wall -g -Werror -Wextra")
+endif()
+
+add_executable(main ${SOURCES})

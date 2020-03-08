@@ -1,0 +1,3 @@
+/home/ratnesh/Desktop/Numerical-PDE/Diffusion/build/CMakeFiles/rebuild_cache.dir
+/home/ratnesh/Desktop/Numerical-PDE/Diffusion/build/CMakeFiles/edit_cache.dir
+/home/ratnesh/Desktop/Numerical-PDE/Diffusion/build/CMakeFiles/main.dir

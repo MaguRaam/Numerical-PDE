@@ -3,8 +3,9 @@
 #include "EigenValueDecompose.h"
 #include "Matrix.h"
 #include "Grid.h"
-#include "Time.h"
 #include "Plot.h"
+
+typedef Matrix<double> ScalarField;
 
 double exact_solution(const double &x, const double &y)
 {
@@ -20,22 +21,32 @@ double right_handside(const double &x, const double &y)
 
 int main()
 {
+    //Grid
+    Grid g(200, 1.0);
 
-    Grid g(100, 1.0);
-    Matrix<double> uexact = SetFunction(exact_solution, g);
-    Matrix<double> b = SetFunction(right_handside, g) * (g.h() * g.h());
+    //Exact Solution
+    ScalarField uexact = SetFunction(exact_solution, g);
 
+    //Right Hand side
+    ScalarField b = SetFunction(right_handside, g) * (g.h() * g.h());
+
+    //Eigen Vector of Laplace operator
     Matrix<double> P = Laplace::EigenVector(g);
     Matrix<double> Pinverse = P.transpose() * (2.0 * g.h());
+
+    //Eigen value of Laplace Operator
     std::vector<double> Lambda = Laplace::EigenValue(g);
 
-    Matrix<double> temp = Pinverse * b;
-    Matrix<double> btilde = temp * P;
+    //Solve Linear system using Matrix Diagonalization
 
+    //Compute P^{-1} F Q^{-T}
+    ScalarField btilde = Pinverse * b * P;
+
+    //Compute Utilde
     btilde = MatrixDiagonalization::Solve(btilde, Lambda, 1000 * g.h() * g.h());
 
-    temp = P * btilde;
-    Matrix<double> u = temp * Pinverse;
+    //Compute U = P Utilde Q^T
+    ScalarField u = P * btilde * Pinverse;
 
     std::cout << "L2error = " << L2(uexact, u, g) << "\n";
 

@@ -4,7 +4,6 @@
 Application/Helmholtz/CMakeFiles/Helmholtz.dir/Helmholtz.cc.o
  ../Library/Eigen/include/EigenValueDecompose.h
  ../Library/Grid/include/Grid.h
- ../Library/Grid/include/Time.h
  ../Library/Matrix/include/Matrix.h
  ../Library/Matrix/src/Matrix.cc
  ../Library/Plot/include/Plot.h

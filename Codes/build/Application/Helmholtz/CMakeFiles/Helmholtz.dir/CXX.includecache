@@ -22,8 +22,6 @@ vector
 Matrix.h
 ../Library/Grid/include/Matrix.h
 
-../Library/Grid/include/Time.h
-
 ../Library/Matrix/include/Matrix.h
 vector
 -
@@ -61,8 +59,6 @@ Matrix.h
 /home/ratnesh/Desktop/Numerical-PDE/Codes/Application/Helmholtz/Matrix.h
 Grid.h
 /home/ratnesh/Desktop/Numerical-PDE/Codes/Application/Helmholtz/Grid.h
-Time.h
-/home/ratnesh/Desktop/Numerical-PDE/Codes/Application/Helmholtz/Time.h
 Plot.h
 /home/ratnesh/Desktop/Numerical-PDE/Codes/Application/Helmholtz/Plot.h
 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -Wall -g -Wextra -g  -shared -Wl,-soname,libPlot.so -o libPlot.so CMakeFiles/Plot.dir/src/Plot.cc.o -Wl,-rpath,/home/ratnesh/Desktop/Numerical-PDE/Codes/build/Library/Grid:/home/ratnesh/Desktop/Numerical-PDE/Codes/build/Library/Matrix ../Grid/libGrid.so ../Matrix/libMatrix.so 

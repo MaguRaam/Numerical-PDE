@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ratnesh/Desktop/Numerical-PDE/Poisson/include/helmholtz.h
+iostream
+-
+fstream
+-
+cstring
+-
+cmath
+-
+chrono
+-
+
+/home/ratnesh/Desktop/Numerical-PDE/Poisson/source/helmholtz.cc
+../include/helmholtz.h
+/home/ratnesh/Desktop/Numerical-PDE/Poisson/include/helmholtz.h
+
+/home/ratnesh/Desktop/Numerical-PDE/Poisson/source/main.cc
+../include/helmholtz.h
+/home/ratnesh/Desktop/Numerical-PDE/Poisson/include/helmholtz.h
+

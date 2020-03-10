@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/ratnesh/Desktop/Numerical-PDE/Poisson/build",
+  "command": "/usr/bin/c++    -I/home/ratnesh/Desktop/Numerical-PDE/Poisson/include   -Wall -g -Wextra -g   -std=gnu++11 -o CMakeFiles/main.dir/source/helmholtz.cc.o -c /home/ratnesh/Desktop/Numerical-PDE/Poisson/source/helmholtz.cc",
+  "file": "/home/ratnesh/Desktop/Numerical-PDE/Poisson/source/helmholtz.cc"
+},
+{
+  "directory": "/home/ratnesh/Desktop/Numerical-PDE/Poisson/build",
+  "command": "/usr/bin/c++    -I/home/ratnesh/Desktop/Numerical-PDE/Poisson/include   -Wall -g -Wextra -g   -std=gnu++11 -o CMakeFiles/main.dir/source/main.cc.o -c /home/ratnesh/Desktop/Numerical-PDE/Poisson/source/main.cc",
+  "file": "/home/ratnesh/Desktop/Numerical-PDE/Poisson/source/main.cc"
+}
+]

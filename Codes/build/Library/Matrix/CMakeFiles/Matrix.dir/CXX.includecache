@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Matrix/include/Matrix.h
+vector
+-
+cassert
+-
+../src/Matrix.cc
+/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Matrix/src/Matrix.cc
+
+/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Matrix/src/Matrix.cc
+../include/Matrix.h
+/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Matrix/include/Matrix.h
+

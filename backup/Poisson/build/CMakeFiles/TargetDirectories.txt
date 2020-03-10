@@ -1,0 +1,3 @@
+/home/ratnesh/Desktop/Numerical-PDE/Poisson/build/CMakeFiles/rebuild_cache.dir
+/home/ratnesh/Desktop/Numerical-PDE/Poisson/build/CMakeFiles/edit_cache.dir
+/home/ratnesh/Desktop/Numerical-PDE/Poisson/build/CMakeFiles/main.dir

@@ -44,3 +44,13 @@ Matrix<double> SetFunction(double (*func)(const double &x, const double &y), con
     }
     return u;
 }
+
+Matrix<double>& SetFunction( Matrix<double>& u, double (*func)(const double& x,const double& y,const double& t),const double& t,const Grid& g){
+     
+    for (unsigned int i = 0; i <= g.N(); i++)
+    {
+        for (unsigned int j = 0; j <= g.N(); j++)
+            u(i, j) = func(g.x(i), g.y(j),t);
+    }
+    return u;
+}

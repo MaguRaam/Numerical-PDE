@@ -21,12 +21,17 @@
 },
 {
   "directory": "/home/ratnesh/Desktop/Numerical-PDE/Codes/build/Library/Eigen",
-  "command": "/usr/bin/c++   -DEigen_EXPORTS -I/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Eigen/include -I/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Matrix/include -I/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Grid/include -I/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Plot/include   -Wall -g -Wextra -g -fPIC   -std=gnu++11 -o CMakeFiles/Eigen.dir/src/EigenValueDecompose.cc.o -c /home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Eigen/src/EigenValueDecompose.cc",
-  "file": "/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Eigen/src/EigenValueDecompose.cc"
+  "command": "/usr/bin/c++   -DEigen_EXPORTS -I/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Eigen/include -I/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Matrix/include -I/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Grid/include -I/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Plot/include   -Wall -g -Wextra -g -fPIC   -std=gnu++11 -o CMakeFiles/Eigen.dir/src/Eigen.cc.o -c /home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Eigen/src/Eigen.cc",
+  "file": "/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Eigen/src/Eigen.cc"
 },
 {
   "directory": "/home/ratnesh/Desktop/Numerical-PDE/Codes/build/Application/Helmholtz",
   "command": "/usr/bin/c++    -I/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Matrix/include -I/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Grid/include -I/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Plot/include -I/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Eigen/include   -Wall -g -Wextra -g   -std=gnu++11 -o CMakeFiles/Helmholtz.dir/Helmholtz.cc.o -c /home/ratnesh/Desktop/Numerical-PDE/Codes/Application/Helmholtz/Helmholtz.cc",
   "file": "/home/ratnesh/Desktop/Numerical-PDE/Codes/Application/Helmholtz/Helmholtz.cc"
+},
+{
+  "directory": "/home/ratnesh/Desktop/Numerical-PDE/Codes/build/Application/Diffusion",
+  "command": "/usr/bin/c++    -I/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Matrix/include -I/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Grid/include -I/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Plot/include -I/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Eigen/include   -Wall -g -Wextra -g   -std=gnu++11 -o CMakeFiles/Diffusion.dir/Diffusion.cc.o -c /home/ratnesh/Desktop/Numerical-PDE/Codes/Application/Diffusion/Diffusion.cc",
+  "file": "/home/ratnesh/Desktop/Numerical-PDE/Codes/Application/Diffusion/Diffusion.cc"
 }
 ]

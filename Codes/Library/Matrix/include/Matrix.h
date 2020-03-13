@@ -22,8 +22,8 @@ public:
     Matrix<T>& operator=(const Matrix<T> &rhs);
     Matrix<T> operator+(const Matrix<T> &rhs);
     Matrix<T> operator-(const Matrix<T> &rhs);
-    Matrix<T> operator*(const Matrix<T> &rhs);
-    Matrix<T> transpose();
+    Matrix<T> operator*(const Matrix<T> &rhs) const;
+    Matrix<T> transpose() const;
 
     //Operator Overloading Matrix-Scalar operation: //TODO Optimise
     Matrix<T> operator+(const T& rhs);

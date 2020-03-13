@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../Application/CMakeLists.txt"
+  "../Application/Diffusion/CMakeLists.txt"
   "../Application/Helmholtz/CMakeLists.txt"
   "../CMakeLists.txt"
   "../Library/CMakeLists.txt"
@@ -51,6 +52,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Library/Eigen/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Application/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Application/Helmholtz/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Application/Diffusion/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -60,4 +62,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "Library/Plot/CMakeFiles/Plot.dir/DependInfo.cmake"
   "Library/Eigen/CMakeFiles/Eigen.dir/DependInfo.cmake"
   "Application/Helmholtz/CMakeFiles/Helmholtz.dir/DependInfo.cmake"
+  "Application/Diffusion/CMakeFiles/Diffusion.dir/DependInfo.cmake"
   )

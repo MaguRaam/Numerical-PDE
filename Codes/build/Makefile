@@ -175,6 +175,19 @@ Helmholtz/fast:
 	$(MAKE) -f Application/Helmholtz/CMakeFiles/Helmholtz.dir/build.make Application/Helmholtz/CMakeFiles/Helmholtz.dir/build
 .PHONY : Helmholtz/fast
 
+#=============================================================================
+# Target rules for targets named Diffusion
+
+# Build rule for target.
+Diffusion: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Diffusion
+.PHONY : Diffusion
+
+# fast build rule for target.
+Diffusion/fast:
+	$(MAKE) -f Application/Diffusion/CMakeFiles/Diffusion.dir/build.make Application/Diffusion/CMakeFiles/Diffusion.dir/build
+.PHONY : Diffusion/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -188,6 +201,7 @@ help:
 	@echo "... Plot"
 	@echo "... Eigen"
 	@echo "... Helmholtz"
+	@echo "... Diffusion"
 .PHONY : help
 
 

@@ -111,7 +111,7 @@ Library/Matrix/preinstall:
 Library/Matrix/CMakeFiles/Matrix.dir/all:
 	$(MAKE) -f Library/Matrix/CMakeFiles/Matrix.dir/build.make Library/Matrix/CMakeFiles/Matrix.dir/depend
 	$(MAKE) -f Library/Matrix/CMakeFiles/Matrix.dir/build.make Library/Matrix/CMakeFiles/Matrix.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/Codes/build/CMakeFiles --progress-num=8,9 "Built target Matrix"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/Codes/build/CMakeFiles --progress-num=10,11 "Built target Matrix"
 .PHONY : Library/Matrix/CMakeFiles/Matrix.dir/all
 
 # Include target in all.
@@ -166,7 +166,7 @@ Library/Grid/preinstall:
 Library/Grid/CMakeFiles/Grid.dir/all: Library/Matrix/CMakeFiles/Matrix.dir/all
 	$(MAKE) -f Library/Grid/CMakeFiles/Grid.dir/build.make Library/Grid/CMakeFiles/Grid.dir/depend
 	$(MAKE) -f Library/Grid/CMakeFiles/Grid.dir/build.make Library/Grid/CMakeFiles/Grid.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/Codes/build/CMakeFiles --progress-num=3,4,5 "Built target Grid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/Codes/build/CMakeFiles --progress-num=5,6,7 "Built target Grid"
 .PHONY : Library/Grid/CMakeFiles/Grid.dir/all
 
 # Include target in all.
@@ -222,7 +222,7 @@ Library/Plot/CMakeFiles/Plot.dir/all: Library/Matrix/CMakeFiles/Matrix.dir/all
 Library/Plot/CMakeFiles/Plot.dir/all: Library/Grid/CMakeFiles/Grid.dir/all
 	$(MAKE) -f Library/Plot/CMakeFiles/Plot.dir/build.make Library/Plot/CMakeFiles/Plot.dir/depend
 	$(MAKE) -f Library/Plot/CMakeFiles/Plot.dir/build.make Library/Plot/CMakeFiles/Plot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/Codes/build/CMakeFiles --progress-num=10,11 "Built target Plot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/Codes/build/CMakeFiles --progress-num=12,13 "Built target Plot"
 .PHONY : Library/Plot/CMakeFiles/Plot.dir/all
 
 # Include target in all.
@@ -278,7 +278,7 @@ Library/Eigen/CMakeFiles/Eigen.dir/all: Library/Matrix/CMakeFiles/Matrix.dir/all
 Library/Eigen/CMakeFiles/Eigen.dir/all: Library/Grid/CMakeFiles/Grid.dir/all
 	$(MAKE) -f Library/Eigen/CMakeFiles/Eigen.dir/build.make Library/Eigen/CMakeFiles/Eigen.dir/depend
 	$(MAKE) -f Library/Eigen/CMakeFiles/Eigen.dir/build.make Library/Eigen/CMakeFiles/Eigen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/Codes/build/CMakeFiles --progress-num=1,2 "Built target Eigen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/Codes/build/CMakeFiles --progress-num=3,4 "Built target Eigen"
 .PHONY : Library/Eigen/CMakeFiles/Eigen.dir/all
 
 # Include target in all.
@@ -313,16 +313,19 @@ clean: Library/Eigen/CMakeFiles/Eigen.dir/clean
 
 # Convenience name for "all" pass in the directory.
 Application/all: Application/Helmholtz/all
+Application/all: Application/Diffusion/all
 
 .PHONY : Application/all
 
 # Convenience name for "clean" pass in the directory.
 Application/clean: Application/Helmholtz/clean
+Application/clean: Application/Diffusion/clean
 
 .PHONY : Application/clean
 
 # Convenience name for "preinstall" pass in the directory.
 Application/preinstall: Application/Helmholtz/preinstall
+Application/preinstall: Application/Diffusion/preinstall
 
 .PHONY : Application/preinstall
 
@@ -354,7 +357,7 @@ Application/Helmholtz/CMakeFiles/Helmholtz.dir/all: Library/Plot/CMakeFiles/Plot
 Application/Helmholtz/CMakeFiles/Helmholtz.dir/all: Library/Eigen/CMakeFiles/Eigen.dir/all
 	$(MAKE) -f Application/Helmholtz/CMakeFiles/Helmholtz.dir/build.make Application/Helmholtz/CMakeFiles/Helmholtz.dir/depend
 	$(MAKE) -f Application/Helmholtz/CMakeFiles/Helmholtz.dir/build.make Application/Helmholtz/CMakeFiles/Helmholtz.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/Codes/build/CMakeFiles --progress-num=6,7 "Built target Helmholtz"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/Codes/build/CMakeFiles --progress-num=8,9 "Built target Helmholtz"
 .PHONY : Application/Helmholtz/CMakeFiles/Helmholtz.dir/all
 
 # Include target in all.
@@ -381,6 +384,64 @@ Application/Helmholtz/CMakeFiles/Helmholtz.dir/clean:
 
 # clean rule for target.
 clean: Application/Helmholtz/CMakeFiles/Helmholtz.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory Application/Diffusion
+
+# Convenience name for "all" pass in the directory.
+Application/Diffusion/all: Application/Diffusion/CMakeFiles/Diffusion.dir/all
+
+.PHONY : Application/Diffusion/all
+
+# Convenience name for "clean" pass in the directory.
+Application/Diffusion/clean: Application/Diffusion/CMakeFiles/Diffusion.dir/clean
+
+.PHONY : Application/Diffusion/clean
+
+# Convenience name for "preinstall" pass in the directory.
+Application/Diffusion/preinstall:
+
+.PHONY : Application/Diffusion/preinstall
+
+#=============================================================================
+# Target rules for target Application/Diffusion/CMakeFiles/Diffusion.dir
+
+# All Build rule for target.
+Application/Diffusion/CMakeFiles/Diffusion.dir/all: Library/Matrix/CMakeFiles/Matrix.dir/all
+Application/Diffusion/CMakeFiles/Diffusion.dir/all: Library/Grid/CMakeFiles/Grid.dir/all
+Application/Diffusion/CMakeFiles/Diffusion.dir/all: Library/Plot/CMakeFiles/Plot.dir/all
+Application/Diffusion/CMakeFiles/Diffusion.dir/all: Library/Eigen/CMakeFiles/Eigen.dir/all
+	$(MAKE) -f Application/Diffusion/CMakeFiles/Diffusion.dir/build.make Application/Diffusion/CMakeFiles/Diffusion.dir/depend
+	$(MAKE) -f Application/Diffusion/CMakeFiles/Diffusion.dir/build.make Application/Diffusion/CMakeFiles/Diffusion.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ratnesh/Desktop/Numerical-PDE/Codes/build/CMakeFiles --progress-num=1,2 "Built target Diffusion"
+.PHONY : Application/Diffusion/CMakeFiles/Diffusion.dir/all
+
+# Include target in all.
+all: Application/Diffusion/CMakeFiles/Diffusion.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Application/Diffusion/CMakeFiles/Diffusion.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ratnesh/Desktop/Numerical-PDE/Codes/build/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 Application/Diffusion/CMakeFiles/Diffusion.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ratnesh/Desktop/Numerical-PDE/Codes/build/CMakeFiles 0
+.PHONY : Application/Diffusion/CMakeFiles/Diffusion.dir/rule
+
+# Convenience name for target.
+Diffusion: Application/Diffusion/CMakeFiles/Diffusion.dir/rule
+
+.PHONY : Diffusion
+
+# clean rule for target.
+Application/Diffusion/CMakeFiles/Diffusion.dir/clean:
+	$(MAKE) -f Application/Diffusion/CMakeFiles/Diffusion.dir/build.make Application/Diffusion/CMakeFiles/Diffusion.dir/clean
+.PHONY : Application/Diffusion/CMakeFiles/Diffusion.dir/clean
+
+# clean rule for target.
+clean: Application/Diffusion/CMakeFiles/Diffusion.dir/clean
 
 .PHONY : clean
 

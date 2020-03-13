@@ -19,3 +19,6 @@
 /home/ratnesh/Desktop/Numerical-PDE/Codes/build/Application/Helmholtz/CMakeFiles/rebuild_cache.dir
 /home/ratnesh/Desktop/Numerical-PDE/Codes/build/Application/Helmholtz/CMakeFiles/edit_cache.dir
 /home/ratnesh/Desktop/Numerical-PDE/Codes/build/Application/Helmholtz/CMakeFiles/Helmholtz.dir
+/home/ratnesh/Desktop/Numerical-PDE/Codes/build/Application/Diffusion/CMakeFiles/edit_cache.dir
+/home/ratnesh/Desktop/Numerical-PDE/Codes/build/Application/Diffusion/CMakeFiles/rebuild_cache.dir
+/home/ratnesh/Desktop/Numerical-PDE/Codes/build/Application/Diffusion/CMakeFiles/Diffusion.dir

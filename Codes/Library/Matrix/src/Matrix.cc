@@ -87,7 +87,7 @@ Matrix<T> Matrix<T>::operator-(const Matrix<T> &rhs)
 
 //Matrix Multiplication opearator *
 template <typename T>
-Matrix<T> Matrix<T>::operator*(const Matrix<T> &rhs)
+Matrix<T> Matrix<T>::operator*(const Matrix<T> &rhs) const
 {
     assert(this->cols == rhs.rows);
 
@@ -108,7 +108,7 @@ Matrix<T> Matrix<T>::operator*(const Matrix<T> &rhs)
 
 // Calculate a transpose of this matrix
 template <typename T>
-Matrix<T> Matrix<T>::transpose()
+Matrix<T> Matrix<T>::transpose() const
 {
     Matrix result(rows, cols, 0.0);
 

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Eigen.dir/src/EigenValueDecompose.cc.o"
+  "CMakeFiles/Eigen.dir/src/Eigen.cc.o"
   "libEigen.pdb"
   "libEigen.so"
 )

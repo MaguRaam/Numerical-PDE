@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../Library/Eigen/include/EigenValueDecompose.h
+../Library/Eigen/include/Eigen.h
 Matrix.h
 ../Library/Eigen/include/Matrix.h
 Grid.h
@@ -53,8 +53,8 @@ iostream
 -
 cmath
 -
-EigenValueDecompose.h
-/home/ratnesh/Desktop/Numerical-PDE/Codes/Application/Helmholtz/EigenValueDecompose.h
+Eigen.h
+/home/ratnesh/Desktop/Numerical-PDE/Codes/Application/Helmholtz/Eigen.h
 Matrix.h
 /home/ratnesh/Desktop/Numerical-PDE/Codes/Application/Helmholtz/Matrix.h
 Grid.h

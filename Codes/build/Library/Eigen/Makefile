@@ -125,32 +125,32 @@ Eigen/fast:
 	cd /home/ratnesh/Desktop/Numerical-PDE/Codes/build && $(MAKE) -f Library/Eigen/CMakeFiles/Eigen.dir/build.make Library/Eigen/CMakeFiles/Eigen.dir/build
 .PHONY : Eigen/fast
 
-src/EigenValueDecompose.o: src/EigenValueDecompose.cc.o
+src/Eigen.o: src/Eigen.cc.o
 
-.PHONY : src/EigenValueDecompose.o
+.PHONY : src/Eigen.o
 
 # target to build an object file
-src/EigenValueDecompose.cc.o:
-	cd /home/ratnesh/Desktop/Numerical-PDE/Codes/build && $(MAKE) -f Library/Eigen/CMakeFiles/Eigen.dir/build.make Library/Eigen/CMakeFiles/Eigen.dir/src/EigenValueDecompose.cc.o
-.PHONY : src/EigenValueDecompose.cc.o
+src/Eigen.cc.o:
+	cd /home/ratnesh/Desktop/Numerical-PDE/Codes/build && $(MAKE) -f Library/Eigen/CMakeFiles/Eigen.dir/build.make Library/Eigen/CMakeFiles/Eigen.dir/src/Eigen.cc.o
+.PHONY : src/Eigen.cc.o
 
-src/EigenValueDecompose.i: src/EigenValueDecompose.cc.i
+src/Eigen.i: src/Eigen.cc.i
 
-.PHONY : src/EigenValueDecompose.i
+.PHONY : src/Eigen.i
 
 # target to preprocess a source file
-src/EigenValueDecompose.cc.i:
-	cd /home/ratnesh/Desktop/Numerical-PDE/Codes/build && $(MAKE) -f Library/Eigen/CMakeFiles/Eigen.dir/build.make Library/Eigen/CMakeFiles/Eigen.dir/src/EigenValueDecompose.cc.i
-.PHONY : src/EigenValueDecompose.cc.i
+src/Eigen.cc.i:
+	cd /home/ratnesh/Desktop/Numerical-PDE/Codes/build && $(MAKE) -f Library/Eigen/CMakeFiles/Eigen.dir/build.make Library/Eigen/CMakeFiles/Eigen.dir/src/Eigen.cc.i
+.PHONY : src/Eigen.cc.i
 
-src/EigenValueDecompose.s: src/EigenValueDecompose.cc.s
+src/Eigen.s: src/Eigen.cc.s
 
-.PHONY : src/EigenValueDecompose.s
+.PHONY : src/Eigen.s
 
 # target to generate assembly for a file
-src/EigenValueDecompose.cc.s:
-	cd /home/ratnesh/Desktop/Numerical-PDE/Codes/build && $(MAKE) -f Library/Eigen/CMakeFiles/Eigen.dir/build.make Library/Eigen/CMakeFiles/Eigen.dir/src/EigenValueDecompose.cc.s
-.PHONY : src/EigenValueDecompose.cc.s
+src/Eigen.cc.s:
+	cd /home/ratnesh/Desktop/Numerical-PDE/Codes/build && $(MAKE) -f Library/Eigen/CMakeFiles/Eigen.dir/build.make Library/Eigen/CMakeFiles/Eigen.dir/src/Eigen.cc.s
+.PHONY : src/Eigen.cc.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Eigen"
-	@echo "... src/EigenValueDecompose.o"
-	@echo "... src/EigenValueDecompose.i"
-	@echo "... src/EigenValueDecompose.s"
+	@echo "... src/Eigen.o"
+	@echo "... src/Eigen.i"
+	@echo "... src/Eigen.s"
 .PHONY : help
 
 

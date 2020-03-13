@@ -1,4 +1,4 @@
-#include "../include/EigenValueDecompose.h"
+#include "../include/Eigen.h"
 
 namespace Laplace
 {
@@ -24,15 +24,4 @@ std::vector<double> EigenValue(const Grid &g)
 
 } // namespace Laplace
 
-namespace MatrixDiagonalization
-{
-Matrix<double> &Solve(Matrix<double> &btilde, const std::vector<double> &eigenvalue, const double &value)
-{
-    for (unsigned int i = 1; i < eigenvalue.size() - 1; i++)
-    {
-        for (unsigned int j = 1; j < eigenvalue.size() - 1; j++)
-            btilde(i, j) /= (eigenvalue[i] + eigenvalue[j] + value);
-    }
-    return btilde;
-}
-} // namespace MatrixDiagonalization
+ 

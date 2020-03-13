@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-#include "EigenValueDecompose.h"
+#include "Eigen.h"
 #include "Matrix.h"
 #include "Grid.h"
 #include "Plot.h"
@@ -22,33 +22,39 @@ double right_handside(const double &x, const double &y)
 int main()
 {
     //Grid
-    Grid g(200, 1.0);
+    const Grid g(512, 1.0);
+    const double h = g.h();
 
     //Exact Solution
-    ScalarField uexact = SetFunction(exact_solution, g);
+    const ScalarField Uexact = SetFunction(exact_solution, g);
 
     //Right Hand side
-    ScalarField b = SetFunction(right_handside, g) * (g.h() * g.h());
+    const ScalarField F = SetFunction(right_handside, g) * h * h;
 
     //Eigen Vector of Laplace operator
-    Matrix<double> P = Laplace::EigenVector(g);
-    Matrix<double> Pinverse = P.transpose() * (2.0 * g.h());
+    const Matrix<double> P = Laplace::EigenVector(g);
+    const Matrix<double> Pinverse = P.transpose() * (2.0 * h); //Normalize:
 
     //Eigen value of Laplace Operator
-    std::vector<double> Lambda = Laplace::EigenValue(g);
+    const std::vector<double> Lambda = Laplace::EigenValue(g);
 
     //Solve Linear system using Matrix Diagonalization
 
     //Compute P^{-1} F Q^{-T}
-    ScalarField btilde = Pinverse * b * P;
+    ScalarField Ftilde = Pinverse * F * P;
 
     //Compute Utilde
-    btilde = MatrixDiagonalization::Solve(btilde, Lambda, 1000 * g.h() * g.h());
+    ScalarField &Utilde = Ftilde;
+    for (unsigned int m = 1; m < g.N(); m++)
+    {
+        for (unsigned int n = 1; n < g.N(); n++)
+            Utilde(m, n) /= (Lambda[m] + Lambda[n] +  1000 * h * h);
+    }
 
     //Compute U = P Utilde Q^T
-    ScalarField u = P * btilde * Pinverse;
+    ScalarField U = P * Utilde * Pinverse;
 
-    std::cout << "L2error = " << L2(uexact, u, g) << "\n";
+    std::cout << "L2error = " << L2(Uexact, U, g) << "\n";
 
     return 0;
 }

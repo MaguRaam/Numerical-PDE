@@ -24,7 +24,7 @@ cassert
 ../include/Matrix.h
 ../Library/Matrix/include/Matrix.h
 
-/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Eigen/include/EigenValueDecompose.h
+/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Eigen/include/Eigen.h
 Matrix.h
 /home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Eigen/include/Matrix.h
 Grid.h
@@ -34,7 +34,7 @@ vector
 cmath
 -
 
-/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Eigen/src/EigenValueDecompose.cc
-../include/EigenValueDecompose.h
-/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Eigen/include/EigenValueDecompose.h
+/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Eigen/src/Eigen.cc
+../include/Eigen.h
+/home/ratnesh/Desktop/Numerical-PDE/Codes/Library/Eigen/include/Eigen.h
 

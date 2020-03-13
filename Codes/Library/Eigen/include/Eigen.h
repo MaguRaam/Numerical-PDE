@@ -13,8 +13,5 @@ std::vector<double> EigenValue(const Grid &g);
 
 } // namespace Laplace
 
-namespace MatrixDiagonalization
-{
-Matrix<double> &Solve(Matrix<double> &btilde, const std::vector<double> &eigenvalue, const double &value);
-}
+ 
 #endif

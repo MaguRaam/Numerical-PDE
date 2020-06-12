@@ -1,0 +1,17 @@
+/home/magu/Desktop/Numerical-PDE/2d/build/CMakeFiles/rebuild_cache.dir
+/home/magu/Desktop/Numerical-PDE/2d/build/CMakeFiles/Diffusion.dir
+/home/magu/Desktop/Numerical-PDE/2d/build/CMakeFiles/edit_cache.dir
+/home/magu/Desktop/Numerical-PDE/2d/build/Library/CMakeFiles/rebuild_cache.dir
+/home/magu/Desktop/Numerical-PDE/2d/build/Library/CMakeFiles/edit_cache.dir
+/home/magu/Desktop/Numerical-PDE/2d/build/Library/Matrix/CMakeFiles/rebuild_cache.dir
+/home/magu/Desktop/Numerical-PDE/2d/build/Library/Matrix/CMakeFiles/Matrix.dir
+/home/magu/Desktop/Numerical-PDE/2d/build/Library/Matrix/CMakeFiles/edit_cache.dir
+/home/magu/Desktop/Numerical-PDE/2d/build/Library/Grid/CMakeFiles/rebuild_cache.dir
+/home/magu/Desktop/Numerical-PDE/2d/build/Library/Grid/CMakeFiles/Grid.dir
+/home/magu/Desktop/Numerical-PDE/2d/build/Library/Grid/CMakeFiles/edit_cache.dir
+/home/magu/Desktop/Numerical-PDE/2d/build/Library/Plot/CMakeFiles/rebuild_cache.dir
+/home/magu/Desktop/Numerical-PDE/2d/build/Library/Plot/CMakeFiles/Plot.dir
+/home/magu/Desktop/Numerical-PDE/2d/build/Library/Plot/CMakeFiles/edit_cache.dir
+/home/magu/Desktop/Numerical-PDE/2d/build/Library/Eigen/CMakeFiles/rebuild_cache.dir
+/home/magu/Desktop/Numerical-PDE/2d/build/Library/Eigen/CMakeFiles/Eigen.dir
+/home/magu/Desktop/Numerical-PDE/2d/build/Library/Eigen/CMakeFiles/edit_cache.dir

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/magu/Desktop/Numerical-PDE/2d/Library/Matrix/include/Matrix.h
+vector
+-
+cassert
+-
+../src/Matrix.cc
+/home/magu/Desktop/Numerical-PDE/2d/Library/Matrix/src/Matrix.cc
+
+/home/magu/Desktop/Numerical-PDE/2d/Library/Matrix/src/Matrix.cc
+../include/Matrix.h
+/home/magu/Desktop/Numerical-PDE/2d/Library/Matrix/include/Matrix.h
+

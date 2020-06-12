@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -Wall -g -Wextra  -shared -Wl,-soname,libGrid.so -o libGrid.so CMakeFiles/Grid.dir/src/Grid.cc.o CMakeFiles/Grid.dir/src/Time.cc.o -Wl,-rpath,/home/magu/Desktop/Numerical-PDE/2d/build/Library/Matrix ../Matrix/libMatrix.so 

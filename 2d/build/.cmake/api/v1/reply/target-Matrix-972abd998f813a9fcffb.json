@@ -1,0 +1,100 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Library/Matrix/libMatrix.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"Library/Matrix/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -Wall -g -Wextra -fPIC   -std=gnu++11"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "Matrix_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/magu/Desktop/Numerical-PDE/2d/Library/Matrix/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "Matrix::@b8e21bf3b294d613274e",
+	"link" : 
+	{
+		"language" : "CXX"
+	},
+	"name" : "Matrix",
+	"nameOnDisk" : "libMatrix.so",
+	"paths" : 
+	{
+		"build" : "Library/Matrix",
+		"source" : "Library/Matrix"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Library/Matrix/src/Matrix.cc",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

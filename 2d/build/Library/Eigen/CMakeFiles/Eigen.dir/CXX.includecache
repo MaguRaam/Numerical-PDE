@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Library/Grid/include/Grid.h
+vector
+-
+Matrix.h
+../Library/Grid/include/Matrix.h
+
+../Library/Matrix/include/Matrix.h
+vector
+-
+cassert
+-
+../src/Matrix.cc
+../Library/Matrix/src/Matrix.cc
+
+../Library/Matrix/src/Matrix.cc
+../include/Matrix.h
+../Library/Matrix/include/Matrix.h
+
+/home/magu/Desktop/Numerical-PDE/2d/Library/Eigen/include/Eigen.h
+Matrix.h
+/home/magu/Desktop/Numerical-PDE/2d/Library/Eigen/include/Matrix.h
+Grid.h
+/home/magu/Desktop/Numerical-PDE/2d/Library/Eigen/include/Grid.h
+vector
+-
+cmath
+-
+
+/home/magu/Desktop/Numerical-PDE/2d/Library/Eigen/src/Eigen.cc
+../include/Eigen.h
+/home/magu/Desktop/Numerical-PDE/2d/Library/Eigen/include/Eigen.h
+

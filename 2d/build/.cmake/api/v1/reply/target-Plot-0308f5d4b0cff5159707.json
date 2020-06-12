@@ -1,0 +1,133 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Library/Plot/libPlot.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"Library/Plot/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 2,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -Wall -g -Wextra -fPIC   -std=gnu++11"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "Plot_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/magu/Desktop/Numerical-PDE/2d/Library/Plot/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/magu/Desktop/Numerical-PDE/2d/Library/Grid/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/magu/Desktop/Numerical-PDE/2d/Library/Matrix/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "Matrix::@b8e21bf3b294d613274e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Grid::@7160b752b62d82d8420e"
+		}
+	],
+	"id" : "Plot::@648af0ce42f9c230f636",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wl,-rpath,/home/magu/Desktop/Numerical-PDE/2d/build/Library/Grid:/home/magu/Desktop/Numerical-PDE/2d/build/Library/Matrix ../Grid/libGrid.so ../Matrix/libMatrix.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "Plot",
+	"nameOnDisk" : "libPlot.so",
+	"paths" : 
+	{
+		"build" : "Library/Plot",
+		"source" : "Library/Plot"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Library/Plot/src/Plot.cc",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

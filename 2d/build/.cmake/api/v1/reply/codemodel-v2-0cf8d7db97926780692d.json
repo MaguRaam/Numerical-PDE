@@ -1,0 +1,173 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "Library",
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Library"
+				},
+				{
+					"build" : "Library/Matrix",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "Library/Matrix",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "Library/Grid",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "Library/Grid",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "Library/Plot",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "Library/Plot",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "Library/Eigen",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "Library/Eigen",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"name" : "Diffusion",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Diffusion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Diffusion-0a0725c8e21c0c2ce4d1.json",
+					"name" : "Diffusion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Eigen::@bfdb741b569ea0af55ea",
+					"jsonFile" : "target-Eigen-87acf78ac6bf34607a52.json",
+					"name" : "Eigen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Grid::@7160b752b62d82d8420e",
+					"jsonFile" : "target-Grid-40cc9604f3db8b86ad96.json",
+					"name" : "Grid",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Matrix::@b8e21bf3b294d613274e",
+					"jsonFile" : "target-Matrix-972abd998f813a9fcffb.json",
+					"name" : "Matrix",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "Plot::@648af0ce42f9c230f636",
+					"jsonFile" : "target-Plot-0308f5d4b0cff5159707.json",
+					"name" : "Plot",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/magu/Desktop/Numerical-PDE/2d/build",
+		"source" : "/home/magu/Desktop/Numerical-PDE/2d"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

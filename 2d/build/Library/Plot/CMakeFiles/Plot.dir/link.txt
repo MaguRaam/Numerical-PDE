@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -Wall -g -Wextra  -shared -Wl,-soname,libPlot.so -o libPlot.so CMakeFiles/Plot.dir/src/Plot.cc.o -Wl,-rpath,/home/magu/Desktop/Numerical-PDE/2d/build/Library/Grid:/home/magu/Desktop/Numerical-PDE/2d/build/Library/Matrix ../Grid/libGrid.so ../Matrix/libMatrix.so 

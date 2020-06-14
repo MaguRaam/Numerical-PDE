@@ -21,7 +21,7 @@ public:
     const double& h() const;
     const double& L() const;
     friend Matrix<double> SetFunction(double (*func)(const double& x,const double& y),const Grid& g);
-    friend Matrix<double>& SetFunction(  Matrix<double>& u, double (*func)(const double& x,const double& y,const double& t),const double& t,const Grid& g);
+    friend void SetFunction(  Matrix<double>& u, double (*func)(const double& x,const double& y,const double& t),const double& t,const Grid& g);
  
 };
 

@@ -19,7 +19,7 @@ typedef Matrix<double> ScalarField;
 
 double exact_solution(const double &x, const double &y, const double &t)
 {
-    return (sin(2.0 * M_PI * x) * sin(2.0 * M_PI * y) * sin(2.0 * M_PI * t)) / (8 * M_PI * M_PI - 2 * M_PI);
+    return (exp(-8.0 * M_PI * M_PI * t) - ((cos(2.0 * M_PI * t) - 4.0 * M_PI * sin(2.0 * M_PI * t)) / ((2.0 * M_PI) + (32.0 * M_PI * M_PI * M_PI)))) * (sin(2.0 * M_PI * x) * sin(2.0 * M_PI * y));
 }
 
 double right_handside(const double &x, const double &y, const double &t)
@@ -29,13 +29,16 @@ double right_handside(const double &x, const double &y, const double &t)
 
 int main()
 {
+    //space:
+    const Grid G(128, 1.0);
+
     
-    const Grid G(20, 1.0);
-    const Time T(0.1, 0.01);
+    //time:
+    const Time T(0.5, 0.00390625);
 
     ScalarField U(G.N() + 1, G.N() + 1, 0.0), Uexact(U), B(U), Bnew(U);
     ScalarField Utilde(U), Btilde(U);
-
+    
     //Eigen Vector and Eigen Value of Laplace operator
     const Matrix<double> P = Laplace::EigenVector(G);
     const Matrix<double> Pinverse = P.transpose() * (2.0 * G.h()); //Normalize:
@@ -49,8 +52,8 @@ int main()
         cout << "Time = " << t << "\n";
 
         //Compute Btilde from B:
-        B     = SetFunction(B, right_handside, t, G);
-        Bnew  = SetFunction(B,right_handside,t+T.dt(),G);
+        SetFunction(B, right_handside, t, G);
+        SetFunction(Bnew, right_handside, t + T.dt(), G);
         Btilde = Pinverse * (B + Bnew) * P;
 
         //Solve:
@@ -71,7 +74,7 @@ int main()
     U = P * Utilde * Pinverse;
 
     //Compute Uexact:
-    Uexact = SetFunction(Uexact, exact_solution, t, G);
+    SetFunction(Uexact, exact_solution, t, G);
 
     //Write data:
     WriteDataMatplot(Uexact, G, "../plot/", "Uexact.dat");
@@ -79,8 +82,8 @@ int main()
     WriteDataMatplot(B, G, "../plot/", "B.dat");
 
     //Error:
-    cout << "L2 error = "<<L2(Uexact, U, G) << "\n";
-    cout << "Linfty error = "<<Linfty(Uexact, U, G) << "\n";
+    cout << "L2 error = " << L2(Uexact, U, G) << "\n";
+    cout << "Linfty error = " << Linfty(Uexact, U, G) << "\n";
 
     return 0;
 }

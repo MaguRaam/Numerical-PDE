@@ -58,5 +58,6 @@
         "random": "cpp",
         "set": "cpp",
         "string": "cpp"
-    }
+    },
+    "python.pythonPath": "/home/magu/anaconda3/bin/python"
 }

@@ -30,11 +30,11 @@ double right_handside(const double &x, const double &y, const double &t)
 int main()
 {
     //space:
-    const Grid G(128, 1.0);
+    const Grid G(16, 1.0);
 
     
     //time:
-    const Time T(0.5, 0.00390625);
+    const Time T(0.5,0.00390625);
 
     ScalarField U(G.N() + 1, G.N() + 1, 0.0), Uexact(U), B(U), Bnew(U);
     ScalarField Utilde(U), Btilde(U);

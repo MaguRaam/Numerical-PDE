@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/field.h
+iostream
+-
+cassert
+-
+cmath
+-
+fstream
+-
+
+/home/ratnesh/Desktop/Computational-Gas-Dynamics/c++/2D/source/advection.cc
+iostream
+-
+cmath
+-
+vector
+-
+field.h
+/home/ratnesh/Desktop/Computational-Gas-Dynamics/c++/2D/source/field.h
+
+/home/ratnesh/Desktop/Computational-Gas-Dynamics/c++/2D/source/field.cc
+field.h
+/home/ratnesh/Desktop/Computational-Gas-Dynamics/c++/2D/source/field.h
+

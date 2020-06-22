@@ -1,0 +1,3 @@
+/home/ratnesh/Desktop/Computational-Gas-Dynamics/c++/2D/build/CMakeFiles/rebuild_cache.dir
+/home/ratnesh/Desktop/Computational-Gas-Dynamics/c++/2D/build/CMakeFiles/edit_cache.dir
+/home/ratnesh/Desktop/Computational-Gas-Dynamics/c++/2D/build/CMakeFiles/a.out.dir
